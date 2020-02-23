@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../../common/context-path-helper.js"></script>
+    <link rel="stylesheet" type="text/css" href="WC.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../utils/utils.js"></script>
+    <script src="WC.js"></script>
+</head>
+<body>
+
+<h1 id="repoName"></h1>
+
+<div id="HeadButtons">
+
+</div>
+
+
+<table>
+    <thead>
+    <tr>
+        <td>File Path</td>
+        <td>Type</td>
+        <td>Delete</td>
+        <td>Add</td>
+        <td>Content</td>
+    </tr>
+    </thead>
+
+    <tbody id="WCTable">
+
+    </tbody>
+</table>
+
+<section id="EditSection">
+    <div>
+        <h5>Edit Content File:</h5>
+        <textarea id="ContentTextArea" name="comment" form="FileContent"></textarea>
+    </div>
+
+    <form id="FileContent" enctype="multipart/form-data" method="POST">
+        <input type="submit"  value="Save File Changes">
+    </form>
+</section>
+
+<section id="AddFileSection">
+    <div id="File">
+        <h3>For creating new file</h3>
+        File name: <input id="FileName" type="text" PLACEHOLDER="File name">
+        <div>
+            <h5>Content File:</h5>
+            <textarea id="AddFileTextArea" name="comment" form="AddFile"></textarea>
+        </div>
+        <form id="AddFile" enctype="multipart/form-data" method="POST">
+            <input type="submit"  value="Add New File">
+        </form>
+    </div>
+
+    <div id="Folder">
+           <h3>For creating new folder</h3>
+        Folder name: <input id="FolderName" type="text" PLACEHOLDER="Folder name">
+        <form id="AddFolder" enctype="multipart/form-data" method="POST">
+            <input type="submit"  value="Add New Folder">
+        </form>
+    </div>
+
+</section>
+
+
+</body>
+</html>

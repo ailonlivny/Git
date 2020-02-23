@@ -1,0 +1,18 @@
+.view
+{
+    height:250px;
+    width:1270px;
+    border:1px solid #ccc;
+    font:16px/26px Georgia, Garamond, Serif;
+    overflow:auto;
+}
+
+body
+{
+    background-color: #E8E8E8;
+}
+
+h4
+{
+    font-size: 15px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head>
+    <title>userscreen</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../../common/context-path-helper.js"></script>
+    <link rel="stylesheet" type="text/css" href="userscreen.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../utils/utils.js"></script>
+    <script src="userscreen.js"></script>
+
+</head>
+<body>
+
+<button type="button" class="btn btn-danger" id="logOutBotton">Logout</button>
+
+<div id="welcomeDiv">
+    <h1 id="welcome">Welcome!</h1>
+</div>
+
+
+<div id="addingRepo">
+<h3>Add new repository</h3>
+<form id="uploadForm" enctype="multipart/form-data" method="POST">
+    <input type="file" name="file">
+    <input type="submit" value="Upload File">
+</form>
+</div>
+
+<p>&nbsp;</p>
+
+<h3>repositories:</h3>
+
+<section class="view">
+    <ul id="repoList">
+    </ul>
+</section>
+
+<h3>notifications:</h3>
+
+<section class="view">
+    <ul id="notificationsList">
+    </ul>
+</section>
+
+<h3>All users:</h3>
+
+<section class="view">
+    <ul id="usersList">
+    </ul>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

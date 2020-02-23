@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>repositoryPage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../../common/context-path-helper.js"></script>
+    <link rel="stylesheet" href="repositoryPage.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="../utils/utils.js"></script>
+    <script src="repositoryPage.js"></script>
+</head>
+<body>
+
+<button type="button" class="btn btn-light" id="back">back</button>
+
+<h1 id="repoName"></h1>
+
+<div id="Bottons">
+    <button type="button" class="btn btn-info" id="WC">WC</button>
+    <button type="button" class="btn btn-info" id="createBranch">Create Branch</button>
+    <button type="button" class="btn btn-info" id="checkOut">CheckOut</button>
+    <button type="button" class="btn btn-info" id="pull">Pull</button>
+    <button type="button" class="btn btn-info" id="push">Push</button>
+    <button type="button" class="btn btn-info" id="PRBtn">Create PR</button>
+    <button type="button" class="btn btn-info" id="deleteBranch">Delete Branch</button>
+
+    <div id="ChackOutModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close"></span>
+            <h5>Branches:</h5>
+            <form id="checkOutChoice" enctype="multipart/form-data" method="POST">
+                <select id="branchesOptions" name="branches" multiple >
+                </select>
+                <input type="submit">
+            </form>
+
+        </div>
+
+    </div>
+
+    <div id="DeleteModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close"></span>
+            <h5>Branches:</h5>
+            <form id="DeleteChoice" enctype="multipart/form-data" method="POST">
+                <select id="DeleteOptions" name="branches" multiple >
+                </select>
+                <input type="submit">
+            </form>
+
+        </div>
+
+    </div>
+
+    <div id="PRModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close"></span>
+
+            <form id="PRChoice" enctype="multipart/form-data" method="POST">
+                <h5>Target Branches: </h5>
+                <select id="PROptions" name="PR" multiple >
+                </select>
+                <h5>Base Branches: </h5>
+                <select id="PRRemoteOptions" name="PR" multiple >
+                </select>
+                <h5>Message: </h5>
+                <input type="text" id="PRMsg" placeholder="Message">
+                <input type="submit">
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div id="Titles" class="view">
+    <button type="button" class="btn btn-light" id="branches">Branches</button>
+    <button type="button" class="btn btn-light" id="commits">Commits</button>
+    <button type="button" class="btn btn-light" id="pr">PR</button>
+    <button type="button" class="btn btn-light" id="messages">Messages</button>
+
+    <section class="view">
+        <ul id="TitlesList">
+        </ul>
+    </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

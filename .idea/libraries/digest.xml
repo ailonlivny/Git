@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="digest">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/3rd/commons-codec-1.12.jar!/org/apache/commons/codec/digest" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ideaLibSources/commons-codec-1.12-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

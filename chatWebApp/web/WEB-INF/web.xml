@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginPage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CurrentUserServlet</servlet-name>
+        <servlet-class>servlets.CurrentUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CurrentUserServlet</servlet-name>
+        <url-pattern>/userName</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogOutServlet</servlet-name>
+        <servlet-class>servlets.LogOutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogOutServlet</servlet-name>
+        <url-pattern>/LogOut</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UsersInSystemServlet</servlet-name>
+        <servlet-class>servlets.UsersInSystemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UsersInSystemServlet</servlet-name>
+        <url-pattern>/usersInSystem</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UploadRepoServlet</servlet-name>
+        <servlet-class>servlets.UploadRepoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadRepoServlet</servlet-name>
+        <url-pattern>/uploadRepo</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetRepositoryAsJson</servlet-name>
+        <servlet-class>servlets.GetRepositoryAsJson</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetRepositoryAsJson</servlet-name>
+        <url-pattern>/getRepository</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NumOfBranchesServlet</servlet-name>
+        <servlet-class>servlets.NumOfBranchesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NumOfBranchesServlet</servlet-name>
+        <url-pattern>/numOfBranches</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>GetLastCommitServlet</servlet-name>
+        <servlet-class>servlets.GetLastCommitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetLastCommitServlet</servlet-name>
+        <url-pattern>/getLastCommit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AllRepositoriesOfUser</servlet-name>
+        <servlet-class>servlets.AllRepositoriesOfUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AllRepositoriesOfUser</servlet-name>
+        <url-pattern>/allMyRepos</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ForkServlet</servlet-name>
+        <servlet-class>servlets.ForkServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForkServlet</servlet-name>
+        <url-pattern>/fork</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetAllNotificationsServlet</servlet-name>
+        <servlet-class>servlets.GetAllNotificationsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetAllNotificationsServlet</servlet-name>
+        <url-pattern>/getNotifications</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateBranchServlet</servlet-name>
+        <servlet-class>servlets.CreateBranchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateBranchServlet</servlet-name>
+        <url-pattern>/createBranch</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetAllBranchesServlet</servlet-name>
+        <servlet-class>servlets.GetAllBranchesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetAllBranchesServlet</servlet-name>
+        <url-pattern>/getAllBranches</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CheckOutServlet</servlet-name>
+        <servlet-class>servlets.CheckOutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckOutServlet</servlet-name>
+        <url-pattern>/checkOut</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowAllBranchesServlet</servlet-name>
+        <servlet-class>servlets.ShowAllBranchesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowAllBranchesServlet</servlet-name>
+        <url-pattern>/showAllBranches</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>PullServlet</servlet-name>
+        <servlet-class>servlets.PullServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PullServlet</servlet-name>
+        <url-pattern>/pull</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetWCServlet</servlet-name>
+        <servlet-class>servlets.GetWCServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetWCServlet</servlet-name>
+        <url-pattern>/getWC</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetFileContentServlet</servlet-name>
+        <servlet-class>servlets.GetFileContentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetFileContentServlet</servlet-name>
+        <url-pattern>/getFileContent</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SaveFileServlet</servlet-name>
+        <servlet-class>servlets.SaveFileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveFileServlet</servlet-name>
+        <url-pattern>/saveFile</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteFileServlet</servlet-name>
+        <servlet-class>servlets.DeleteFileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteFileServlet</servlet-name>
+        <url-pattern>/deleteFile</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddFileServlet</servlet-name>
+        <servlet-class>servlets.AddFileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddFileServlet</servlet-name>
+        <url-pattern>/addFile</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MakeCommitServlet</servlet-name>
+        <servlet-class>servlets.MakeCommitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MakeCommitServlet</servlet-name>
+        <url-pattern>/makeCommit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetCommitsServlet</servlet-name>
+        <servlet-class>servlets.GetCommitsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCommitsServlet</servlet-name>
+        <url-pattern>/getCommits</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>GetFileListFromCommitServlet</servlet-name>
+        <servlet-class>servlets.GetFileListFromCommitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetFileListFromCommitServlet</servlet-name>
+        <url-pattern>/getFileListFromCommit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SetRepoServlet</servlet-name>
+        <servlet-class>servlets.SetRepoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetRepoServlet</servlet-name>
+        <url-pattern>/setRepo</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>PushServlet</servlet-name>
+        <servlet-class>servlets.PushServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PushServlet</servlet-name>
+        <url-pattern>/push</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>GetAllRTBBranchesServlet</servlet-name>
+        <servlet-class>servlets.GetAllRTBBranchesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetAllRTBBranchesServlet</servlet-name>
+        <url-pattern>/getAllRTBBranches</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>CreatePRServlet</servlet-name>
+        <servlet-class>servlets.CreatePRServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreatePRServlet</servlet-name>
+        <url-pattern>/createPR</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetAllRemoteBranchesServlet</servlet-name>
+        <servlet-class>servlets.GetAllRemoteBranchesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetAllRemoteBranchesServlet</servlet-name>
+        <url-pattern>/getAllRemoteBranches</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetPRServlet</servlet-name>
+        <servlet-class>servlets.GetPRServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetPRServlet</servlet-name>
+        <url-pattern>/getPR</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetPRFileListServlet</servlet-name>
+        <servlet-class>servlets.GetPRFileListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetPRFileListServlet</servlet-name>
+        <url-pattern>/getPRFileList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeletePRServlet</servlet-name>
+        <servlet-class>servlets.DeletePRServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeletePRServlet</servlet-name>
+        <url-pattern>/deletePR</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DenyPRServlet</servlet-name>
+        <servlet-class>servlets.DenyPRServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DenyPRServlet</servlet-name>
+        <url-pattern>/denyPR</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AcceptPRServlet</servlet-name>
+        <servlet-class>servlets.AcceptPRServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AcceptPRServlet</servlet-name>
+        <url-pattern>/acceptPR</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteBranchServlet</servlet-name>
+        <servlet-class>servlets.DeleteBranchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteBranchServlet</servlet-name>
+        <url-pattern>/deleteBranch</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddFolderServlet</servlet-name>
+        <servlet-class>servlets.AddFolderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddFolderServlet</servlet-name>
+        <url-pattern>/addFolder</url-pattern>
+    </servlet-mapping>
+
+    <listener>
+        <listener-class>servlets.ContextServlet</listener-class>
+    </listener>
+
+</web-app>
